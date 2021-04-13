@@ -1,7 +1,7 @@
 # Code-a-mon!
 
-This project will include 3 different design patterns based off the Gang of Four.
-The recommended design patterns will be used to complete this project. 
+This project will include 3 different decorator patterns based off the Gang of Four.
+The recommended decorator patterns will be used to complete this project. 
 
 # Pattern 1 - Decorator 
 
