@@ -5,7 +5,15 @@ The recommended decorator patterns will be used to complete this project.
 
 # Pattern 1 - Decorator 
 
-This pattern will be used to integrate changes of behaviors within program.
+This pattern is focused around the evolution and stats of a code-a-mon, and allows
+for a change in value during an evolution.
+
+Requirements met:
+
+    • The simulation should run on cycles. A cycle is considered to be of 2 parts - 1 daytime and 1 night time.
+    • Each cycle should have it’s own weather event.
+    • During the night, evolutions of code-a-mons can occur.
+    • Code-a-mons should have at minimum: Attack, Defense, Health.
 
 # Pattern 2 - Factory
 
