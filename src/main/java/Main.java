@@ -16,7 +16,7 @@ public class Main {
 
         // Initiate second decorated mon stats
         Stats second = new Stats();
-        attackStat a = new attackStat(first, 50);
+        attackStat a = new attackStat(second, 50);
         defenseStat b = new defenseStat(a, 40);
         healthStat c = new healthStat(b, 100);
 

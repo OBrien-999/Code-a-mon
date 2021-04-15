@@ -40,7 +40,7 @@ decorator/World.java
  decorator.World$Weather
 decorator/attackStat.java
  decorator.attackStat
-Main.java
- Main
 decorator/Stats.java
  decorator.Stats
+Main.java
+ Main
