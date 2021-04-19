@@ -33,7 +33,26 @@ public class Main {
 
         System.out.println("\n== BEGIN FACTORY PATTERN TESTING ==\n");
 
+        // Creating a new factory builder
+        CharacterFactory factory = new CharacterFactory();
 
+        // Creating a beginner trainer
+        factory.Trainer beginner = factory.createTrainer("Beginner");
+        beginner.create();
+
+        // Creating an expert trainer
+        factory.Trainer expert = factory.createTrainer("Expert");
+        expert.create();
+
+        // Beginner trainer attemping to capture new Codeamons
+        beginner.capture();
+        beginner.capture();
+        beginner.capture();
+
+        // Expert trainer attempting to capture new Codeamons
+        expert.capture();
+        expert.capture();
+        expert.capture();
 
         System.out.println("\n== BEGIN MEDIATOR PATTERN TESTING ==\n");
 

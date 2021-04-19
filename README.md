@@ -17,8 +17,14 @@ Requirements met:
 
 # Pattern 2 - Factory
 
-This pattern will be used to create new characters within the program by having a
-seperate factory method to call.
+This pattern is focused around the creation of trainers and codeamons, and allows
+use of a factory class to easily create and store trainer/codeamon values. 
+
+Requirements met:
+
+    • A new world must start with a number of trainers, at least 2, each of them starts with at least one code-a-mon
+    • The trainer can acquire more code-a-mons (max of 6) throughout their adventure. How they acquire them is up to you.
+    • Code-a-mons should have at minimum: Attack, Defense, Health, Attack Type.
 
 # Pattern 3 - Mediator
 

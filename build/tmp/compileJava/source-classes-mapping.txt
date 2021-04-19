@@ -1,25 +1,27 @@
 mediator/World.java
  mediator.World
-factory/WaterCodeamon.java
- factory.WaterCodeamon
-factory/FireCodeamon.java
- factory.FireCodeamon
+decorator/Stats.java
+ decorator.Stats
+decorator/attackStat.java
+ decorator.attackStat
 decorator/CodeamonDecorator.java
  decorator.CodeamonDecorator
-factory/Trainer.java
- factory.Trainer
-factory/TrainerStats.java
- factory.TrainerStats
-factory/GrassCodeamon.java
- factory.GrassCodeamon
+decorator/Type.java
+ decorator.Type
+decorator/World.java
+ decorator.World
+ decorator.World$Time
+ decorator.World$Weather
+decorator/Codeamon.java
+ decorator.Codeamon
 mediator/Shop.java
  mediator.Shop
 mediator/Trainer.java
  mediator.Trainer
 mediator/Mediator.java
  mediator.Mediator
-factory/Codeamon.java
- factory.Codeamon
+decorator/healthStat.java
+ decorator.healthStat
 mediator/Weather.java
  mediator.Weather
 mediator/BattleField.java
@@ -28,19 +30,21 @@ mediator/Codeamon.java
  mediator.Codeamon
 decorator/defenseStat.java
  decorator.defenseStat
-decorator/healthStat.java
- decorator.healthStat
-decorator/Codeamon.java
- decorator.Codeamon
-decorator/Type.java
- decorator.Type
-decorator/World.java
- decorator.World
- decorator.World$Time
- decorator.World$Weather
-decorator/attackStat.java
- decorator.attackStat
-decorator/Stats.java
- decorator.Stats
+factory/FireCodeamon.java
+ factory.FireCodeamon
+factory/WaterCodeamon.java
+ factory.WaterCodeamon
+factory/Codeamon.java
+ factory.Codeamon
+factory/GrassCodeamon.java
+ factory.GrassCodeamon
+factory/CharacterFactory.java
+ factory.CharacterFactory
+factory/Trainer.java
+ factory.Trainer
+factory/ExpertTrainer.java
+ factory.ExpertTrainer
+factory/BeginnerTrainer.java
+ factory.BeginnerTrainer
 Main.java
  Main

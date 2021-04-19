@@ -1,7 +1,7 @@
 package factory;
 
-public abstract class Codeamon {
+public interface Codeamon {
 
-
+    void create();
 
 }

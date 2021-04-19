@@ -1,7 +1,8 @@
 package factory;
 
-public abstract class Trainer {
+public interface Trainer {
 
-
+    void create();
+    void capture();
 
 }
