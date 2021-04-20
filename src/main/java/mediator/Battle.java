@@ -1,10 +1,10 @@
 package mediator;
 
-public class Shop implements Runnable {
+public class Battle implements Runnable {
 
     private Mediator mediator;
 
-    public Shop(Mediator mediator) {
+    public Battle(Mediator mediator) {
 
         this.mediator = mediator;
 
@@ -15,7 +15,7 @@ public class Shop implements Runnable {
 
         while(!Thread.currentThread().isInterrupted()) {
 
-            mediator.shop(Data.Hannah, Data.Brandon);
+            mediator.battle(Data.Hannah, Data.Brandon);
 
         }
 

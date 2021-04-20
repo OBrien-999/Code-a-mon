@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 import mediator.*;
 import decorator.*;
 import factory.*;
@@ -29,7 +32,7 @@ public class Main {
         mon2.create();
 
         // Initiate world
-        decorator.World.initiateWorld(mon1, mon2);
+        World.initiateWorld(mon1, mon2);
 
         System.out.println("\n== BEGIN FACTORY PATTERN TESTING ==\n");
 
@@ -44,7 +47,7 @@ public class Main {
         factory.Trainer expert = factory.createTrainer("Expert");
         expert.create();
 
-        // Beginner trainer attemping to capture new Codeamons
+        // Beginner trainer attempting to capture new Codeamons
         beginner.capture();
         beginner.capture();
         beginner.capture();
@@ -56,8 +59,43 @@ public class Main {
 
         System.out.println("\n== BEGIN MEDIATOR PATTERN TESTING ==\n");
 
+        // Printing trainer stats
+        Data.print(Data.Hannah);
+        Data.print(Data.Brandon);
 
+        // Creating thread task list and initializing the world
+        List<Thread> taskList = new ArrayList<>();
+        Mediator mediator = new Mediator();
+        taskList.add(new Thread(new Battle(mediator)));
+        taskList.add(new Thread(new Shop(mediator)));
+        taskList.add(new Thread(new Battle(mediator)));
+        taskList.add(new Thread(new Shop(mediator)));
 
+        for(Thread t : taskList) {
+
+            t.start();
+
+        }
+
+        AtomicInteger counter = new AtomicInteger(0);
+        boolean stop = false;
+
+        while(!stop) {
+
+            if(counter.get() == 150) {
+
+                stop = true;
+                for (Thread t : taskList) {
+
+                    t.interrupt();
+
+                }
+
+            }
+
+            counter.getAndIncrement();
+
+        }
 
     }
 

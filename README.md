@@ -28,7 +28,15 @@ Requirements met:
 
 # Pattern 3 - Mediator
 
-This pattern will be used to restrict direct communication between the objects during 
-the battle, captures or purchases. This will allow for more mediated communication.
+This pattern is focused around the the battle and shop operations. I used a mediator class with multi threading to simulate
+a tick-based world. Only one operation runs at a time.
 
-... More to come!
+Requirements met:
+
+    • A new world must start with a number of trainers, at least 2, each of them starts with at least one code-a-mon
+    • Code-a-mons will compete 1v1 with another trainers code-a-mons
+    • Weather events should benefit certain types of code-a-mon’s stats while being a dis-advantage to others
+    • Only one battle can take place at a time. A battle is always between two trainers and each using one code-a-mon
+    • Attacks should be performed in a turn-based manner, one code-a-mon attackes while the other defends, then vice-versa until one faints. When a code-a-mon’s health reaches 	     0 or less, they faint, and this particular fight is over. Experience points can be handled in two ways: when a code-a-mon defeats another or when the battle is over, it 	    can be given either to the entire team orto just the code-a-mon that won.
+
+
