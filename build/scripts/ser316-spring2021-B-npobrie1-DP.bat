@@ -71,7 +71,7 @@ set CLASSPATH=%APP_HOME%\lib\ser316-spring2021-B-npobrie1-DP.jar;%APP_HOME%\lib\
 
 
 @rem Execute ser316-spring2021-B-npobrie1-DP
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %SER316_SPRING2021_B_NPOBRIE1_DP_OPTS%  -classpath "%CLASSPATH%" Main %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %SER316_SPRING2021_B_NPOBRIE1_DP_OPTS%  -classpath "%CLASSPATH%"  %*
 
 :end
 @rem End local scope for the variables with windows NT shell
